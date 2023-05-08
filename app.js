@@ -8,4 +8,5 @@ app.use(cors());
 app.use(localStore(__dirname + "local"));
 app.use(cloudService(new Docker()));
 
+app.use(Docker());
 app.init(https);
